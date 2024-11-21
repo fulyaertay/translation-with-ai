@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai"
 
 const TranslateForm = () => {
-    const genAI = new GoogleGenerativeAI("AIzaSyB_1pgW84IFTdpChSZj24Oqv4gIPbYqi0o");
+    const genAI = new GoogleGenerativeAI("API_KEY");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const [inputText, setInputText] = useState("");
     const [selectedLanguage, setSelectedLanguage] = useState("tr");
